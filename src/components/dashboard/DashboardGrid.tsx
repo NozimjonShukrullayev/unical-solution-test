@@ -97,7 +97,7 @@ export const DashboardGrid = () => {
 					style={{ minHeight: '400px' }}
 				>
 					{blocks.map(block => (
-						<div key={block.id} className='group z-10'>
+						<div key={block.id} className='group z-[59]'>
 							<Block data={block} />
 						</div>
 					))}
