@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.block-shadow {
+	will-change: filter;
+	transition: filter 300ms;
+}
+.block-shadow:hover {
+	filter: drop-shadow(0 0 2em #646cff1d);
+}
+
+.react-grid-item.react-grid-placeholder {
+	background: rgb(255, 0, 0, 0.2) !important;
+	border: 2px dashed red !important;
+	border-radius: 8px;
+	opacity: 0.5;
+}
+
+.react-resizable-handle {
+	background-image: none !important;
+	background-color: #3b82f6;
+	border-radius: 50%;
+	width: 12px !important;
+	height: 12px !important;
+	right: 2px !important;
+	bottom: 2px !important;
+	opacity: 0;
+	transition: opacity 0.2s ease-in-out;
+}
+
+.react-grid-item:hover .react-resizable-handle {
+	opacity: 1;
+}
+
+.react-grid-item.react-grid-placeholder {
+	border-radius: 8px;
+	transition: all 0.2s ease-in-out;
+}
