@@ -15,7 +15,10 @@ const sampleChartData = {
 
 const ChartBlock = () => {
 	return (
-		<div className='w-full h-full flex items-end justify-around p-4'>
+		<div className='w-full h-full relative flex items-end justify-around p-4'>
+			<p className='absolute top-5 text-base py-2 bg-slate-100/45 mx-5 text-gray-500 text-center w-4/5'>
+				Image
+			</p>
 			{sampleChartData.bar.map((item, index) => (
 				<motion.div
 					key={index}
