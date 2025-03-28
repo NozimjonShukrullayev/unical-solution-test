@@ -24,9 +24,9 @@ export const Welcome = ({ onComplete }: { onComplete: () => void }) => {
 
 	return (
 		<motion.div
-			initial={{ opacity: 0 }}
+			initial={{ opacity: 0.5 }}
 			animate={{ opacity: 1 }}
-			exit={{ y: '100%', transition: { duration: 0.5, ease: 'easeInOut' } }}
+			exit={{ y: '100%', transition: { duration: 0.5, ease: 'easeOut' } }}
 			className='fixed inset-0 z-[60] flex items-center justify-center'
 			style={{
 				backgroundImage:
