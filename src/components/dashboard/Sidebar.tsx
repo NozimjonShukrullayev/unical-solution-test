@@ -9,7 +9,7 @@ export const Sidebar = () => {
 		<motion.div
 			initial={false}
 			animate={{ width: 256 }}
-			className={`bg-gray-800 fixed pt-5 text-white min-h-screen flex-col z-50 transition-all duration-300 ${
+			className={`bg-gray-800 fixed pt-5 text-white min-h-screen flex-col z-[60] transition-all duration-300 ${
 				!isOpenSidebar ? '-translate-x-[97%] ' : '-translate-x-0'
 			}`}
 		>
