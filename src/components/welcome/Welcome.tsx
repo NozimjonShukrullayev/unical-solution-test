@@ -27,7 +27,7 @@ export const Welcome = ({ onComplete }: { onComplete: () => void }) => {
 			initial={{ opacity: 0.5 }}
 			animate={{ opacity: 1 }}
 			exit={{ y: '100%', transition: { duration: 0.5, ease: 'easeOut' } }}
-			className='fixed inset-0 z-[60] flex items-center justify-center'
+			className='fixed inset-0 z-[70] flex items-center justify-center'
 			style={{
 				backgroundImage:
 					'url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop)',
